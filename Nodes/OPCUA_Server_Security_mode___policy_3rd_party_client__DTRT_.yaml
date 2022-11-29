@@ -1,0 +1,72 @@
+Name: OPCUA_Server_Security_mode___policy_3rd_party_client__DTRT_
+Id: g=23487e83eba3dec4468b46ef7a5eb461
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=4087a3fc3e7dac09c3e6b4ea4cfac034
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: PasswordPolicy
+  Id: g=d7b179f40e892748bfbaaaceac4f097b
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=945c6ace657522db7e0673a50fded2de
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=5f2f159717d0e215c386828e3719bd57
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=82497a85fb912c592c38ec27bf2a45aa
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=146f6af29db4a69aa20e861054775963
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: Locales
+  Id: g=5fbfee39a2dcc1b4633b6f43a057973f
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- Name: LocaleFallbackList
+  Id: g=d375eb462a26f7a889261c9dd3bc96a5
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: DefaultUserFolder
+  Id: g=0cdffc17107de5244ffc63899087caac
+  Type: NodePointer
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"2e79a1f3d69d8ba2e067295b4a707ab7","Namespace":7}
+  Children:
+  - Name: Kind
+    Id: g=b353421212eb79c60481dec43ed65170
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":61}
